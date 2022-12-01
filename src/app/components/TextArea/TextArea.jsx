@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./TextArea.css";
 const TextArea = () => {
 	return (
 		<textarea
-			className="border border-emerald-500"
+			className="text-area"
 			name=""
 			id=""
 			cols="30"

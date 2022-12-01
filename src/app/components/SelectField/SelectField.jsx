@@ -1,5 +1,6 @@
 import React from "react";
 import Select from "react-select";
+import "./SelectField.css";
 
 const SelectField = () => {
 	const options = [
@@ -7,7 +8,22 @@ const SelectField = () => {
 		{ value: "Задача2", label: "Задача2" },
 		{ value: "Задача3", label: "Задача3" },
 	];
-	return <Select options={options} />;
+	return (
+		<div className="select">
+			<Select
+				styles={{
+					control: (baseStyles, state) => ({
+						...baseStyles,
+						backgroundColor: "rgb(43,43,43);",
+						maxWidth: "300px",
+						margin: "0 auto",
+					}),
+				}}
+				options={options}
+			/>
+		</div>
+	);
 };
 
 export default SelectField;
+

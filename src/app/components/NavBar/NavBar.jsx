@@ -1,24 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./NavBar.css";
+import { UserCircleIcon } from "@heroicons/react/24/outline/";
 
 const NavBar = () => {
-	console.log(Date.now());
 	return (
-		<div className=" bg-orange-400 font-mono">
-			<ul className=" text-gray-100 flex justify-between">
-				<div className="flex p-4">
-					<li className="mr-8">
+		<div className="nav-wrapper">
+			<ul className="nav__list">
+				<div className="list__wrapper">
+					<li className="nav__list-item">
 						<Link to="/main">Главная</Link>
 					</li>
-					<li className="mr-8">
+					<li className="nav__list-item">
 						<Link to="/projects">Проекты</Link>
 					</li>
-					<li className="mr-8">
+					<li className="nav__list-item">
 						<Link to="/">Аналитика</Link>
 					</li>
 				</div>
-				<li className="mr-8 p-4">
-					<Link to="/user">Пользователь</Link>
+				<li className="nav__list-item icon">
+					<Link to="/user">
+						<UserCircleIcon className="h-8 w-8" />
+						name
+					</Link>
 				</li>
 			</ul>
 		</div>

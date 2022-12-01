@@ -1,0 +1,30 @@
+.nav-wrapper {
+    background-color:  rgb(217, 113, 56);
+    color: rgb(235, 235, 235);
+    font-weight: 600;
+}
+.list__wrapper {
+    display: flex;
+}
+
+.nav__list { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav__list-item{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav__list-item:hover {
+    color: rgb(56,49,70);
+
+}
+
+.icon {
+    font-size: 10px;
+    text-align: center;
+}
